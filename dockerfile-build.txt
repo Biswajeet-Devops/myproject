@@ -1,0 +1,5 @@
+FROM centos
+RUN yum install -y java maven
+WORKDIR /build
+copy . .
+CMD mvn install
