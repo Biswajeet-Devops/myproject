@@ -33,4 +33,6 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          sh test.sh
+          sh test.sh,
+          echo ${{ secrets.ARTIFACTORY_USERNAME }},
+          echo ${{ secrets.ARTIFACTORY_PASSWORD }}
